@@ -13,17 +13,17 @@ public class Solution {
         print(check(0));
     }
 
-    private static int check (int a){
-        if (a > 0){
+    private static int check(int a) {
+        if (a > 0) {
             return a;
-        } else if (a < 0){
+        } else if (a < 0) {
             return (a * (-1));
         } else {
             return a;
         }
     }
 
-    private static void print (int x){
+    private static void print(int x) {
         System.out.println(x);
     }
 }

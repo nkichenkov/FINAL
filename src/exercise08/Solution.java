@@ -15,8 +15,8 @@ public class Solution {
         age(532);
     }
 
-    private static void age (int a){
-        if (a <= 0 || a > 130){
+    private static void age(int a) {
+        if (a <= 0 || a > 130) {
             print("Бот детектед");
         } else {
             if (a >= 18) {
@@ -27,7 +27,7 @@ public class Solution {
         }
     }
 
-    private static void print (String x){
+    private static void print(String x) {
         System.out.println(x);
     }
 }

@@ -19,8 +19,8 @@ public class Solution {
         checkAge(-100);
     }
 
-    private static void checkAge (int a){
-        if(a < 0 || a > 120){
+    private static void checkAge(int a) {
+        if (a < 0 || a > 120) {
             print("Некорректное значение. Повторите ввод.");
         } else {
             if (a > 0 && a <= 7) {
@@ -37,7 +37,7 @@ public class Solution {
         }
     }
 
-    private static void print (String x){
+    private static void print(String x) {
         System.out.println(x);
     }
 }

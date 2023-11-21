@@ -9,23 +9,24 @@ package exercise21;
 public class Solution {
 
     private static boolean GAMER1 = true;
+
     public static void main(String[] args) {
-        check(1,"step1");
-        check(1,"step2");
-        check(2,"step3");
-        check(2,"step4");
-        check(1,"step5");
+        check(1, "step1");
+        check(1, "step2");
+        check(2, "step3");
+        check(2, "step4");
+        check(1, "step5");
     }
 
-    private static void check (int numberGamer, String step){
+    private static void check(int numberGamer, String step) {
         if (numberGamer == 1 && GAMER1 ||
-        numberGamer == 2 && !GAMER1){
+                numberGamer == 2 && !GAMER1) {
             print(step);
             GAMER1 = !GAMER1;
         }
     }
 
-    private static void print (String x){
+    private static void print(String x) {
         System.out.println(x);
     }
 }

@@ -10,15 +10,15 @@ package exercise20;
 
 public class Solution {
     public static void main(String[] args) {
-        print(check(1,false));
-        print(check(12,true));
-        print(check(1,true));
-        print(check(13,false));
-        print(check(103,true));
+        print(check(1, false));
+        print(check(12, true));
+        print(check(1, true));
+        print(check(13, false));
+        print(check(103, true));
     }
 
-    private static boolean check (int lessonNumber, boolean isUserPremium){
-        if (lessonNumber < 1 || lessonNumber > 100){
+    private static boolean check(int lessonNumber, boolean isUserPremium) {
+        if (lessonNumber < 1 || lessonNumber > 100) {
             print("Номер урока невалидный");
             return false;
         } else {
@@ -26,11 +26,11 @@ public class Solution {
         }
     }
 
-    private static void print (Boolean x){
+    private static void print(Boolean x) {
         System.out.println(x);
     }
 
-    private static void print (String x){
+    private static void print(String x) {
         System.out.println(x);
     }
 }

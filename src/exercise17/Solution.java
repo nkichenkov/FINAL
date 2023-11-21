@@ -9,14 +9,14 @@ package exercise17;
 
 public class Solution {
     public static void main(String[] args) {
-        checkName("Иван","Иванов");
-        checkName("Иван","Сидоров");
-        checkName("Николай","Иванов");
-        checkName("Николай","Сидоров");
+        checkName("Иван", "Иванов");
+        checkName("Иван", "Сидоров");
+        checkName("Николай", "Иванов");
+        checkName("Николай", "Сидоров");
     }
 
-    private static void checkName (String name, String surname){
-        if (name.equals("Иван") || surname.equals("Иванов")){
+    private static void checkName(String name, String surname) {
+        if (name.equals("Иван") || surname.equals("Иванов")) {
             if (name.equals("Иван") && surname.equals("Иванов")) {
                 print("КОМБО-ВОМБО");
             } else {
@@ -27,7 +27,7 @@ public class Solution {
         }
     }
 
-    private static void print (String x){
+    private static void print(String x) {
         System.out.println(x);
     }
 }

@@ -13,8 +13,8 @@ public class Solution {
         check(102);
     }
 
-    private static void check (int a){
-        if (a > 0 && a < 100){
+    private static void check(int a) {
+        if (a > 0 && a < 100) {
             print("Вода");
         } else if (a < 0) {
             print("Лёд");
@@ -23,7 +23,7 @@ public class Solution {
         }
     }
 
-    private static void print (String x){
+    private static void print(String x) {
         System.out.println(x);
     }
 }

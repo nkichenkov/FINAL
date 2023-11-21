@@ -17,20 +17,19 @@ public class Solution {
         today(false, false);
     }
 
-    private static void today (boolean isDayOff, boolean isHoliday){
-        if (isDayOff && isHoliday){
+    private static void today(boolean isDayOff, boolean isHoliday) {
+        if (isDayOff && isHoliday) {
             print("Будильников не надо. Отдыхай");
-        } else if (isHoliday){
+        } else if (isHoliday) {
             print("Будильников не надо");
-        } else if (isDayOff){
+        } else if (isDayOff) {
             print("Звонит будильник в 11 утра");
-        }
-        else {
+        } else {
             print("Будильник в 6 утра");
         }
     }
 
-    private static void print(String x){
+    private static void print(String x) {
         System.out.println(x);
     }
 }

@@ -14,12 +14,12 @@ public class Solution {
         checkLGBT(false, false);
     }
 
-    private static void checkLGBT (Boolean a, Boolean b){
+    private static void checkLGBT(Boolean a, Boolean b) {
         String result = a != b ? "Совет да любовь" : "Уезжайте";
         print(result);
     }
 
-    private static void print (String x){
+    private static void print(String x) {
         System.out.println(x);
     }
 }

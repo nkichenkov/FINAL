@@ -11,24 +11,24 @@ package exercise02;
 
 public class Solution {
 
-    public static void main(String[] args){
-        chooseToDrink(true,true);
+    public static void main(String[] args) {
+        chooseToDrink(true, true);
         chooseToDrink(true, false);
         chooseToDrink(false, true);
         chooseToDrink(false, false);
     }
 
-    private static void chooseToDrink(boolean isTodayFriday, boolean aLotOfMoney){
-        if(aLotOfMoney) {
+    private static void chooseToDrink(boolean isTodayFriday, boolean aLotOfMoney) {
+        if (aLotOfMoney) {
             print("Пойти в бар выпить пивка");
-        } else if(isTodayFriday) {
+        } else if (isTodayFriday) {
             print("Попросить в долг у друга и пойти с ним попить пивка");
         } else {
             print("Пойти домой и поесть гречи");
         }
     }
 
-    private static void print(String text){
+    private static void print(String text) {
         System.out.println(text);
     }
 }

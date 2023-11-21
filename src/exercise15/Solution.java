@@ -16,7 +16,7 @@ public class Solution {
         return x.startsWith("http://");
     }
 
-    private static void print (Boolean a){
+    private static void print(Boolean a) {
         System.out.println(a);
     }
 }

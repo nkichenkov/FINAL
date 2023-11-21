@@ -12,18 +12,19 @@ public class Solution {
     private static int GAMER1 = 1;
     private static int GAMER1steps = 0;
     private static int GAMER2 = 1;
+
     public static void main(String[] args) {
-        check(1,"step1");
-        check(1,"step2");
-        check(2,"step3");
-        check(2,"step4");
-        check(1,"step5");
+        check(1, "step1");
+        check(1, "step2");
+        check(2, "step3");
+        check(2, "step4");
+        check(1, "step5");
     }
 
-    private static void check(int gamer, String step){
-        if (gamer == GAMER1){
-            if (gamer == 1){
-                if (GAMER1steps == 0){
+    private static void check(int gamer, String step) {
+        if (gamer == GAMER1) {
+            if (gamer == 1) {
+                if (GAMER1steps == 0) {
                     GAMER1steps++;
                     print(step);
                 } else if (GAMER1steps == 1) {
@@ -38,7 +39,7 @@ public class Solution {
         }
     }
 
-    private static void print (String x){
+    private static void print(String x) {
         System.out.println(x);
     }
 }

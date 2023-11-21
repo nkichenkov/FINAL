@@ -15,28 +15,29 @@ public class Solution {
     private static final int WHISKEY = 9;
 
     public static void main(String[] args) {
-        chooseTake(BEER,WHISKEY,15);
-        chooseTake(BEER,WHISKEY,10);
-        chooseTake(BEER,WHISKEY,7);
-        chooseTake(BEER,WHISKEY,2);
+        chooseTake(BEER, WHISKEY, 15);
+        chooseTake(BEER, WHISKEY, 10);
+        chooseTake(BEER, WHISKEY, 7);
+        chooseTake(BEER, WHISKEY, 2);
     }
-    public static void chooseTake(int beer, int whiskey, int money){
+
+    public static void chooseTake(int beer, int whiskey, int money) {
         if (money >= beer) {
-            if (money >=whiskey) {
+            if (money >= whiskey) {
                 print("Берем виски");
                 int rest = money - whiskey;
-                if (rest >=beer) {
+                if (rest >= beer) {
                     print("Берем пиво");
                 }
-                } else {
+            } else {
                 print("Берем пиво");
             }
-                } else {
+        } else {
             print("Покидаем бар");
         }
     }
 
-    private static void print (String text){
+    private static void print(String text) {
         System.out.println(text);
     }
 }

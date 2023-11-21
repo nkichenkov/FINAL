@@ -12,7 +12,7 @@ public class Solution {
         print(min(-5, -20, 0, 9));
     }
 
-//    private static int min (int a, int b, int c, int d) { (другой метод решения задачи)
+    //    private static int min (int a, int b, int c, int d) { (другой метод решения задачи)
 //        int minAB = min(a, b);
 //        int minCD = min(c, d);
 //        return min(minAB,minCD);
@@ -22,19 +22,19 @@ public class Solution {
 //        return a < b ? a : b;
 //    }
 //
-    private static int min (int a, int b, int c, int d) {
+    private static int min(int a, int b, int c, int d) {
         int min = a;
-        if (b < min){
+        if (b < min) {
             min = b;
-        } else if (c < min){
+        } else if (c < min) {
             min = c;
-        } else if (d < min){
+        } else if (d < min) {
             min = d;
         }
         return min;
     }
 
-    public static void print (int x){
+    public static void print(int x) {
         System.out.println(x);
     }
 }

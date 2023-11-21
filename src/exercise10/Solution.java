@@ -15,15 +15,15 @@ public class Solution {
         checkName("Николай");
     }
 
-    private static void checkName (String name){
-        if (Objects.equals(name, "Антон") || Objects.equals(name, "Денис")){
+    private static void checkName(String name) {
+        if (Objects.equals(name, "Антон") || Objects.equals(name, "Денис")) {
             print("Вы не проходите");
         } else {
             print("Добро пожаловать");
         }
     }
 
-    private static void print (String x){
+    private static void print(String x) {
         System.out.println(x);
     }
 }

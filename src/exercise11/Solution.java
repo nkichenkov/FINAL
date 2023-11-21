@@ -8,6 +8,7 @@ package exercise11;
 
 public class Solution {
     private static int count = 0;
+
     public static void main(String[] args) {
         check();
         check();
@@ -18,8 +19,8 @@ public class Solution {
         check();
     }
 
-    private static void check (){
-        if (count < 5){
+    private static void check() {
+        if (count < 5) {
             print("Вызов метода");
             count++;
         } else {
@@ -27,7 +28,7 @@ public class Solution {
         }
     }
 
-    private static void print (String x){
+    private static void print(String x) {
         System.out.println(x);
     }
 }
