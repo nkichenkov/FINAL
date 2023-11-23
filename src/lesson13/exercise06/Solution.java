@@ -22,6 +22,7 @@ public class Solution {
                 int diff = numbers[i + 1] - numbers[i];
                 if (diff != differece) {
                     result = false;
+                    break;
                 }
             }
         } else {
