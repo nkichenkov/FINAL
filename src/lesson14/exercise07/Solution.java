@@ -6,4 +6,19 @@ package lesson14.exercise07;
  */
 
 public class Solution {
+    public static void main(String[] args) {
+
+    }
+
+    private static void showIndex(String[] array){
+        if (array.length == 0){
+            print("Empty array");
+        } else {
+
+        }
+    }
+
+    private static void print (Object o){
+        System.out.println(o);
+    }
 }
