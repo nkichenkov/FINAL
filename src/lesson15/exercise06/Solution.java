@@ -11,36 +11,44 @@ import java.util.Scanner;
 
 public class Solution {
 
-    private static final String[] COMMANDS = new String[]{"/help", "/start", "/end", "/getLocation"};
-    private static final String[] RESULTS = new String[]{"", "Bot started", "Bot ended", "location is city"};
+    private static final CommandAndResult[] COMMAND_AND_RESULTS = new CommandAndResult[]{
+            new CommandAndResult("/help", ""),
+            new CommandAndResult("/start", "Bor started!"),
+            new CommandAndResult("/getLocation", "location is Moscow"),
+            new CommandAndResult("/end", "Bot ended")
+    };
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        String commands = "commands available for this bot: ";
-        for (String command : COMMANDS) {
-            commands += command + " ";
+        String commands = "commands available for this bot";
+        for (CommandAndResult item : COMMAND_AND_RESULTS) {
+            commands += item.command;
         }
-        RESULTS[0] = commands;
+        COMMAND_AND_RESULTS[0] = new CommandAndResult(COMMAND_AND_RESULTS[0].command, commands);
 
         String input;
         boolean found;
-        while (!(input = scanner.nextLine()).equals(COMMANDS[2])) {
+        while (true) {
+            input = scanner.nextLine();
             found = false;
-            for (int i = 0; i < COMMANDS.length; i++) {
-                if (COMMANDS[i].equals(input)) {
-                    print(RESULTS[i]);
+            for (int i = 0; i < COMMAND_AND_RESULTS.length; i++) {
+                if (COMMAND_AND_RESULTS[i].command.equals(input)) {
+                    print(COMMAND_AND_RESULTS[i].result);
                     found = true;
                     break;
                 }
             }
+            if (COMMAND_AND_RESULTS[COMMAND_AND_RESULTS.length - 1].command.equals(input)) {
+                break;
+            }
             if (!found) {
-                print("no command found. Try typing " + COMMANDS[0]);
+                print("no command found for that input. Try ryping " + COMMAND_AND_RESULTS[0].command);
             }
         }
     }
 
-    private static void print(Object o) {
+    public static void print(Object o) {
         System.out.println(o);
     }
 }
