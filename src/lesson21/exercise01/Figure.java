@@ -5,9 +5,13 @@ public abstract class Figure {
     final String type;
     protected final double[] sides;
 
-    protected Figure(String type, double[] sides) {
-        this.type = type;
+    protected Figure(double[] sides) {
+        this.type = getClass().getSimpleName();
         this.sides = sides;
+    }
+
+    protected String getType() {
+        return getClass().getSimpleName();
     }
 
     public abstract double getArea();
@@ -18,6 +22,10 @@ public abstract class Figure {
             perimeter += side;
         }
         return perimeter;
+    }
+
+    public String toString() {
+        return getType() + " - area: " + getArea() + ", perimeter: " + getPerimeter();
     }
 
 }
