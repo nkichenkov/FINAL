@@ -5,4 +5,5 @@ package lesson23.exercise02;
  */
 
 public class Solution {
+
 }
