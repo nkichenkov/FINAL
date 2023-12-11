@@ -6,4 +6,8 @@ package lesson14.exercise12;
  */
 
 public class Solution {
+
+    public static void main(String[] args) {
+
+    }
 }
