@@ -7,6 +7,6 @@ package lesson18.exercise03;
 
 public class Solution {
     public static void main(String[] args) {
-
+        Lesson lesson = new Lesson(true, 4);
     }
 }
