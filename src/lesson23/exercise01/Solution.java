@@ -8,5 +8,5 @@ Junior, Middle, Senior реализации. Написать фабрику в 
  */
 
 public class Solution {
-
+// объявить константы через enum? "public enum ... {...}"
 }
