@@ -1,4 +1,4 @@
-package lesson26.exercise01;
+package lesson25.exercise01.exercise01;
 
 public interface TaskProgressCallback {
 
