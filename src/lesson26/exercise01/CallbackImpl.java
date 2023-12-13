@@ -1,4 +1,4 @@
-package lesson27.exercise01;
+package lesson26.exercise01;
 
 public class CallbackImpl implements TaskProgressCallback {
 
@@ -9,7 +9,7 @@ public class CallbackImpl implements TaskProgressCallback {
     }
 
     @Override
-    public void updateTask(Task oldTask, Task newTask) {
-        taskFactory.updateTask(oldTask, newTask);
+    public void updateTask(Task task) {
+        taskFactory.updateTask(task);
     }
 }

@@ -1,4 +1,4 @@
-package lesson27.exercise01;
+package lesson26.exercise01;
 
 public class EmployeeChain implements TaskHandler {
 

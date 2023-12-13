@@ -1,4 +1,4 @@
-package lesson27.exercise01;
+package lesson26.exercise01;
 
 public class Task {
 
@@ -45,6 +45,7 @@ public class Task {
     enum Status {
         ASSEMBLING_REQUIREMENTS,
         READY_TO_DO,
+        IN_PROGRESS,
         READY_FOR_TESTING,
         DONE
     }

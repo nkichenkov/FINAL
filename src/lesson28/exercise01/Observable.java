@@ -1,4 +1,4 @@
-package lesson27.exercise01;
+package lesson28.exercise01;
 
 public interface Observable {
     void registerObserver(Observer observer);

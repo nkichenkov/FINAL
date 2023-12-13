@@ -1,4 +1,4 @@
-package lesson25.exercise02;
+package lesson26.exercise01;
 
 public class TaskFactory {
 

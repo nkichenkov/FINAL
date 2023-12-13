@@ -1,29 +1,27 @@
 package lesson26.exercise01;
 
-import java.util.ArrayList;
-import java.util.List;
+/*
+За основу взять задачу из прошлой лекции.
+Помните работников? Пусть будет абстрактный класс работника который может работать с какими-то задачами и у этого класса
+наследники Программист, Дизайнер и Тестировщик. Каждый класс сам решает как выполнять задачи. Написать класс задача
+и наследников 3 для него. Связать класс работника с классом задачи (оба абстрактные вместо просто Т напишете этот класс)
+и в методе выполнить задачу заюзаете его. И чтобы усложнить это задание, пусть например дизайнер не только выполняет
+задачи, но и порождает их.
+* супер усложнение для тех кто хочет - пусть будет класс собирающий экстразадания а-ля фабрика задач и распределяющий
+задачи по их типу.
+ */
 
 public class Solution {
+
     public static void main(String[] args) {
-        List<String> list = new ArrayList<>();
-        System.out.println(list.isEmpty());
-        list.add("first");
-        list.add("second");
-        for (String string : list) {
-            System.out.println(string);
-        }
+        TaskFactory factory = new TaskFactory();
+        TaskProgressCallback callback = new CallbackImpl(factory);
+        EmployeeChain chain = new EmployeeChain(new EmployeeChain(new Designer(callback, "Alycia"),
+                new Programmer(callback, "John")),
+                new Tester(callback, "Steve"));
 
-        list.remove("first");
-        for (int i = 0; i < list.size(); i++) {
-            System.out.println("i " + i + " item " + list.get(i));
-        }
-
-        list.add(0, "third");
-        list.add("fourth");
-        System.out.println("added 2 items");
-        list.remove(list.size() - 1);
-        for (int i = 0; i < list.size(); i++) {
-            System.out.println("i " + i + " item " + list.get(i));
-        }
+        while (true)
+            if (!chain.doTask(factory.getTask()))
+                break;
     }
 }

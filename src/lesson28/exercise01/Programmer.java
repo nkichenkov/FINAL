@@ -1,4 +1,4 @@
-package lesson25.exercise02;
+package lesson28.exercise01;
 
 public class Programmer extends Employee {
     protected Programmer(TaskProgressCallback callback, String name) {
