@@ -8,4 +8,11 @@ package lesson29.exercise04;
  */
 
 public class Solution {
+
+    public static void main(String[] args) {
+        Journalist journalist = new Journalist();
+        ArticleCallback callback = journalist::handleArticle;
+        ArticleFactory factory = new ArticleFactory(callback);
+        factory.start();
+    }
 }
