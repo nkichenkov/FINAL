@@ -7,4 +7,25 @@ package lesson14.exercise13;
  */
 
 public class Solution {
+    public static void main(String[] args) {
+        int[] newArray = multiplicationArray(new int[]{1,2,3}, new int[]{4,5,6});
+        String text = "";
+        for (int number : newArray){
+            text += number + " ";
+        }
+        print(text);
+    }
+
+    private static int[] multiplicationArray(int[] a, int[] b) {
+        int[] result = new int[a.length];
+
+        for (int i = 0; i < a.length; i++) {
+                result[i] = a[i] * b[i];
+        }
+        return result;
+    }
+
+    private static void print(Object o) {
+        System.out.println(o);
+    }
 }
